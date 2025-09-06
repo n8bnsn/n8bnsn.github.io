@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  }
+
+/****************   Nav Section **********************/
+nav {
+  display: flex;
+	background-color: red;
+  color: white;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+  display: flex;
+  justify-content: center;
+	background-color: black;
+  color: white;
+}
+
+/*********** Splash Page ************************/
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: whitesmoke;
+}
+
+header h1 {
+  color: darkred;
+  font-family: 'Roboto';
+  font-size: 36px;
+}
+
+header img {
+  border-color: black;
+  border-width: 2px;
+  border-radius: 2px;
+  border: black;
+  border-style: solid;
+}
+
+.address {
+  color: salmon;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+.tagline {
+  color: lightsalmon;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+/************* Sections ********************/
+hr {
+
+}
+
+section h3 {
+  font-family: 'Roboto';
+  color: darkblue
+}
+
+section h2 {
+  font-family: 'Roboto';
+  color: darkblue
+}
+
+section dl {
+  display: grid;
+  align-items: start;
+}
+
+section ul {
+  list-style-type: square;
+  font-family:'Roboto';
+}
+
+section a {
+  text-decoration: none;
+  color: orangered;
+}
+
+section a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24xpx;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card {
+  background-color: darkgrey;
+  border: 2px solid grey;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .three-col {
+      grid-template-columns: 1fr;
+      gap: 16px;
+      justify-items: center;
+    }
+
+    .card {
+      text-align: center;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+input {
+  gap: 10px;
+  background-color: blanchedalmond;
+}
+
+textarea {
+   gap: 10px;
+   background-color: blanchedalmond;
+}
